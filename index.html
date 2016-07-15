@@ -7,6 +7,10 @@
         hello world
     </body>
     <script>
-        document.getElementByID('favicon').href = "favicon1.png"
+        LOAD = {};
+		LOAD.$ = {};
+	    LOAD.$.favicon = document.getElementById('favicon');
+		LOAD.$.favicon.href = 'favicon.png';
+		window.LOAD = LOAD;
     </script>
 </html>
