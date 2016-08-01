@@ -50,10 +50,10 @@
      */
     LOAD.setServerInfo = function (serverName, mapName, maxPlayers) {
         // set map preview image
-        this.$.mapPreview.src = 'asset://mapimage/' + mapName;
+        // this.$.mapPreview.src = 'asset://mapimage/' + mapName;
 
         // gametracker.com map previews can also be used
-        //this.$.mapPreview.src = 'http://image.www.gametracker.com/images/maps/160x120/garrysmod/' + mapName + '.jpg';
+        this.$.mapPreview.src = 'http://image.www.gametracker.com/images/maps/160x120/garrysmod/' + mapName + '.jpg';
 
         this.$.mapName.innerText = mapName;
         this.$.serverName.innerText = serverName;
