@@ -24,6 +24,10 @@ body {
 	height: 100%;
 }
 
+.wrapper {
+	transform: translate( calc( (100% - var(--max-height)) / 3 ) , calc( (100% - var(--max-width)) / 3 ) );
+}
+
 .g-hz {
 	display: inline-block;
 	vertical-align: top;
@@ -56,16 +60,6 @@ body {
 }
 .g-hidden {
 	display: none;
-}
-
-.empty-top {
-	position: relative;
-	width: 100%;
-	height: calc( (100% - var(--max-height)) / 3 );
-}
-.empty-left {
-	position: relative;
-	width: calc( (100% - var(--max-width)) / 3 );
 }
 
 .primary {
