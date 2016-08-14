@@ -27,7 +27,8 @@ body {
 .wrapper {
 	width: calc( 100% - (100% - var(--max-width)) / 3);
 	height: calc( 100% - (100% - var(--max-height)) / 3);
-	transform: translate(calc( (100% - var(--max-width)) / 3 ), calc( (100% - var(--max-height)) / 3 ) );
+	padding-top: calc( (100% - var(--max-height)) / 3 );
+	padding-left: calc( (100% - var(--max-width)) / 3 );
 	overflow: hidden;
 	position: absolute;
 }
