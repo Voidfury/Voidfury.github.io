@@ -1,16 +1,17 @@
-var maxWidth = 1080;
-var maxHeight = 500;
+var w; 
+var h;
 
-var fullWidth = $(window).width();
-var fullHeight = $(window).height();
+repositionScreen = function() {
+	w = $(window).width();
+	h = $(window).height();
+	$("#wrapper").css('width', 'calc( ' + w + 'px - (' + w + 'px - var(--max-width)) / 3)');
+	$("#wrapper").css('height', 'calc( ' + h + 'px - (' + h + 'px - var(--max-height)) / 3)');
+	$("#wrapper").css('margin-left', 'calc( (' + w + 'px - var(--max-width)) / 3 )');
+	$("#wrapper").css('margin-top', 'calc( (' + h + 'px - var(--max-height)) / 3 )');
+}
 
-var wrapperMarginLeft = (fullWidth - maxWidth)/3;
-var wrapperMarginTop = (fullHeight - maxHeight)/3;
-var wrapperWidth = fullWidth - wrapperMarginLeft;
-var wrapperHeight = fullHeight - wrapperMarginTop;
+repositionScreen();
 
-
-$("#wrapper").css('margin-left', wrapperMarginLeft + 'px');
-$("#wrapper").css('margin-top', wrapperMarginTop + 'px');
-$("#wrapper").css('width', wrapperWidth + 'px');
-$("#wrapper").css('height', wrapperHeight + 'px');
+$(window).resize( function(){
+	repositionScreen();
+});
