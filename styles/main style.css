@@ -11,6 +11,7 @@
 html{
 	height:100%;
 	min-height:100%;
+	font-family: "Times New Roman", Georgia, Serif;
 }
 body {
 	background: url(../images/background.jpg) no-repeat;
@@ -25,10 +26,6 @@ body {
 }
 
 .wrapper {
-	width: calc( 100% - (100% - var(--max-width)) / 3);
-	height: calc( 100% - (100% - var(--max-height)) / 3);
-	margin-left: calc( (100% - var(--max-width)) / 3 );
-	margin-top: calc( (100vh - var(--max-height)) / 3 );
 	overflow: hidden;
 	position: relative;
 }
