@@ -26,6 +26,10 @@ body {
 }
 
 .wrapper {
+	width: 1640px;
+	height: 887px;
+	margin-left: 280px;
+	margin-top: 193px;
 	overflow: hidden;
 	position: relative;
 }
