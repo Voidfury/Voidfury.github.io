@@ -42,24 +42,22 @@
 			</div>
 			<div class="g-hz secondary">
 				<div class="g-vr g-1 music">
-					<div class="g-vr">Now Playing</div>
-					<iframe class="g-vr music-image" scrolling="no" frameborder="0"></iframe>
-					<div class="g-vr" id="music-title">This is some title text</div>
-
-					<div class="g-vr g-hidden" id="music">
-						<script>
-							document.write("<iframe src='https://www.youtube.com/embed/" + "ck5f9LzQmjY" + "?rel=0&autohide=0&autoplay=1&loop=1&iv_load_policy=3&vq=medium' frameborder='0' id='music-sound'></iframe>")
-						</script>
-					</div>
+					<div class="g-vr now-playing">Now Playing</div>
+					<div class="g-vr music-image" style="overflow:hidden;" id="music-image"></div>
+					<div class="g-vr music-title" id="music-title">Please wait while the song loads</div>
+					<div class="g-vr g-hidden" id="music-sound"></div>
 				</div>
 			</div>
 		</div>
 	</body>
 
-
+	<script src="scripts/settings.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="scripts/wrapper spacing.js"></script>
 	<script src="scripts/wind animation.js"></script>
+	<script src="scripts/music list.js"></script>
+	<script src="scripts/music controls.js"></script>
 	<script>
 		var progress1 = 0;
 		var progress2 = 0;
@@ -71,11 +69,5 @@
 			$('#bar1').css('width', progress1 + '%');
 			$('#bar2').css('width', progress2 + '%');
 		},20);
-	</script>
-	<script>
-		//$('#progressInfo1').inner = abc;
-		//document.getElementById("music-sound").src = abc;
-		document.getElementById("music").volume = 0.0;
-		$("#music").volume = 0.0;
 	</script>
 </html>

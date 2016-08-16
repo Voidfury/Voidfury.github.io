@@ -1,0 +1,2 @@
+//Settings
+defaultVolume = 5;

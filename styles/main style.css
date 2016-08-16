@@ -116,6 +116,7 @@ body {
 }
 
 .music {
+	width: 270px;
 	position: relative;
 	overflow: hidden;
 }
@@ -123,16 +124,27 @@ body {
 	width: 240px;
 	height: 135px;
 	display: block;
-	background-image: url('https://i.ytimg.com/vi/Ti50KjZv-i8/hqdefault.jpg?custom=true&w=480&360&stc=true&jpg444=true&jpgq=90&sp=68&sigh=K8R2TEuvBlqMg0HCR4Txtf_ZMSs');
+	background-image: url('../images/prep screen.png');
 	background-position: center -22.5px;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin: 10px 15px 10px 15px;
+	margin: 5px 14px 9px 14px;
+	border-width: 1px;
+	border-color: hsla(0,0%,7%,1.0);
+	border-style: solid;
 }
-
-
-
-
+.now-playing {
+	font-variant: small-caps;
+	margin: 3px 35px 0px 9px;
+	font-size: 20pt;
+	border-width: 0px 0px 2px 0px;
+	border-color: hsla(0,0%,0%,0.9);
+	border-style: solid;
+}
+.music-title {
+	margin: 3px 9px 5px 9px;
+	font-size: 14pt;
+}
 
 
 
