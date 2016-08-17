@@ -1,14 +1,11 @@
 :root{
-	--body-back-color: #000;
-	--ls-width: 800px;
-	--ls-height: 550px;
 	--ls-back-color: rgba(40,40,40,0.9);
-	--ls-progress-main-height: 35px;
 	--max-width: 1080px;
 	--max-height: 500px;
 }
 
 html{
+	color: #AAA;
 	height:100%;
 	min-height:100%;
 	font-family: "Times New Roman", Georgia, Serif;
@@ -17,8 +14,7 @@ body {
 	background: url(../images/background.jpg) no-repeat;
 	background-position: 0% 0%;
 	background-size: cover;
-	background-color: var(--body-back-color);
-	color: #AAA;
+	background-color: #000;
 	margin: 0 0 0 0;
 	width: 100%;
 	height: 100%;
@@ -33,51 +29,37 @@ body {
 	overflow: hidden;
 	position: relative;
 }
-
-.g-hz {
+.h {
 	display: inline-block;
 	vertical-align: top;
 }
-.g-vr {
+.v {
 	display: block;
 	position: relative;
 }
-.g-o {
+.o {
 	position: absolute;
 }
 
-.g-1 {
+.g1 {
 	border-radius: 5px;
-	background-color: hsla(0,0%,15%,0.9);
+	background-color: hsla(0,0%,13%,0.8);
 	margin: 7px 2px 7px 2px;
 	overflow: hidden;
 }
-.g-2 {
+.g2 {
 	border-radius: 3px;
 	background-color: hsla(0,0%,30%,0.9);
 	margin: 10px 10px 10px 10px;
 	overflow: hidden;
 }
-.g-3 {
+.g3 {
 	border-radius: 3px;
 	background-color: hsla(0,0%,37%,0.9);
 	margin: 7px 7px 7px 7px;
 	overflow: hidden;
 }
-.g-hidden {
-	display: none;
-}
-
-.primary {
-	width: 800px;
-}
-.secondary {}
-
 .info {
-	position: relative;
-	overflow: hidden;
-}
-.progress {
 	position: relative;
 	overflow: hidden;
 }
@@ -85,9 +67,9 @@ body {
 	height: 25px;
 	width: calc(100% - 10px - 2px);
 	border-width: 1px;
-	border-color: hsla(0,0%,7%,1.0);
+	border-color: hsla(0,0%,10%,1.0);
 	border-style: solid;
-	background-color: hsla(283,100%,25%,0.4);
+	background-color: hsla(283,100%,15%,0.9);
 	position: relative;
 	margin: 5px 5px 5px 5px;
 }
@@ -116,9 +98,16 @@ body {
 }
 
 .music {
-	width: 270px;
 	position: relative;
 	overflow: hidden;
+}
+.now-playing {
+	font-variant: small-caps;
+	margin: 3px 35px 0px 9px;
+	font-size: 20pt;
+	border-width: 0px 0px 4px 0px;
+	border-color: hsla(0,0%,0%,0.9);
+	border-style: solid;
 }
 .music-image {
 	width: 240px;
@@ -133,23 +122,7 @@ body {
 	border-color: hsla(0,0%,7%,1.0);
 	border-style: solid;
 }
-.now-playing {
-	font-variant: small-caps;
-	margin: 3px 35px 0px 9px;
-	font-size: 20pt;
-	border-width: 0px 0px 2px 0px;
-	border-color: hsla(0,0%,0%,0.9);
-	border-style: solid;
-}
 .music-title {
 	margin: 3px 9px 5px 9px;
 	font-size: 14pt;
-}
-
-
-
-.ls-progress-layer2 {
-	height: 100%;
-	width: 0%;
-	background-color: hsla(283,75%,47%,0.55);
 }

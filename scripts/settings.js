@@ -1,2 +1,2 @@
 //Settings
-defaultVolume = 5;
+var volumeScale = 1.0;
