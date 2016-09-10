@@ -14,7 +14,7 @@ contentLoaded(window, function () {
      * @type {Array}
      */
     var fixture = [
-        {"func":"GameDetails","args":["[cG] 24/7 TTT Minecraft/Dolls | SpecDM | LowGrav | PointShop","st.compactgamers.com/loading/garrysmod/ttt/bg-pointshop.php?steamid=76561197991989781","ttt_minecraftcity_v4_dark",40,"76561197991989781","terrortown"],"time":854},
+        {"func":"GameDetails","args":["[cG] 24/7 TTT Minecraft/Dolls | SpecDM | LowGrav | PointShop","st.compactgamers.com/loading/garrysmod/ttt/bg-pointshop.php?steamid=76561197991989781","ttt_icebreaker_final_fix",40,"76561197991989781","terrortown"],"time":854},
         {"func":"DownloadingFile","args":["maps/ttt_minecraftcity_v4_dark.bsp"],"time":1972},
         {"func":"SetFilesNeeded","args":[21],"time":2435},
         {"func":"SetFilesTotal","args":[73],"time":2436},
